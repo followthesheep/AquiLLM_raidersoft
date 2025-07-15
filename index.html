@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AquiLLM - AI Research Knowledge Preservation</title>
-    <meta name="description" content="AquiLLM - Preserving research knowledge through AI-powered tools">
+    <meta name="description" content="AquiLLM - A Tool to Preserve Research Knowledge">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
     <style>
         * {
@@ -419,8 +419,8 @@
         <section class="hero">
             <div class="container">
                 <h1>AquiLLM</h1>
-                <div class="subtitle">Preserving Research Knowledge Through AI</div>
-                <p>An open-source Retrieval-Augmented Generation application that helps researchers manage, search, and interact with their research documents using AI. Upload PDFs, fetch arXiv papers, process handwritten notes, and engage in natural language conversations with your research knowledge.</p>
+                <div class="subtitle">A Tool for Preserving Knowledge in Research Groups</div>
+                <p>AquiLLM is an tool that helps researchers manage, search, and interact with their research documents. The goal is to enable teams to access and preserve their collective knowledge, and to enable new group members to get up to speed quickly.</p>
                 <div class="cta-buttons">
                     <a href="https://github.com/RaiderSoft/AquiLLM" class="btn btn-primary">
                         <i class="fab fa-github"></i> View on GitHub
@@ -431,8 +431,110 @@
                 </div>
                 
                 <img src="constellation.png" alt="Constellation" class="hero-constellation" />
+            </div>
+        </section>
+
+        <section id="about" class="section">
+            <div class="container">
+                <h2 class="section-title">About AquiLLM</h2>
+                <div class="about-content">
+                    <!---
+                    <p>AquiLLM addresses the critical problem of knowledge loss in research teams. When students, postdocs, or researchers leave projects, valuable informal practices, troubleshooting techniques, and institutional knowledge often disappear with them. Our platform uses AI to capture and preserve this knowledge, making it accessible through natural language queries.</p>
+                    
+                    <p>The system supports multiple document formats and allows researchers to organize their knowledge into focused collections. Instead of searching through files manually, teams can ask questions like "How did we solve the calibration problem last year?" and receive contextual answers based on their archived knowledge.</p>
+                    -->
+                    <p>Research groups face persistent challenges in capturing, storing, and retrieving knowledge that is distributed
+                    across team members. Although structured data intended for
+                    analysis and publication is often well managed, much of a
+                    group's collective knowledge remains informal, fragmented, or
+                    undocumented—often passed down orally through meetings,
+                    mentoring, and day-to-day collaboration. This includes private
+                    resources such as emails, meeting notes, training materials,
+                    and ad hoc documentation. Together, these reflect the group's
+                    tacit knowledge—the informal, experience-based expertise that
+                    underlies much of their work. Accessing this knowledge can be
+                    difficult, requiring significant time and insider understanding.
+                    Retrieval-augmented generation (RAG) systems offer promising
+                    solutions by enabling users to query and generate responses
+                    grounded in relevant source material. However, most current
+                    RAG-LLM systems are oriented toward public documents and
+                    overlook the privacy concerns of internal research materials.
+                    We introduce AquiLLM (pronounced ah-quill-em), a lightweight,
+                    modular RAG system designed to meet the needs of research
+                    groups. AquiLLM supports varied document types and configurable privacy settings, enabling more effective access to both
+                    formal and informal knowledge within scholarly groups.</p>
+
+                </div>
                 
-                <div class="funding-text">Supported by:</div>
+                <div class="features-grid">
+                    <div class="feature-item">
+                        <h3>Developed with Considerations for Research Teams</h3>
+                        <p>Focus on the needs of <i>teams</i> rather than just individuals.  Also enable control of research data through different options
+                            for deployment, including completely localized to cloud-based.</p>
+                    </div>
+                    <div class="feature-item">
+                        <h3>Support for Multiple Types of Data</h3>
+                        <p>Upload PDFs, fetch papers from arXiv, import meeting transcripts, scrape webpages, and process handwritten notes.</p>
+                    </div>
+                    <div class="feature-item">
+                        <h3>Natural Language Queries</h3>
+                        <p>Engage in context-aware conversations with AI about your document contents using natural language.</p>
+                    </div>
+                    <div class="feature-item">
+                        <h3>Organized Collections</h3>
+                        <p>Organize documents into logical collections for focused research projects and streamlined knowledge management. Support for different levels of permission and privacy.</p>
+                    </div>
+                    <div class="feature-item">
+                        <h3>Multiple LLM Providers</h3>
+                        <p>Flexible support for commercial LLM providers including Claude, OpenAI, and Gemini or local deployments like Gemma and Llama.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="team" class="section team-section">
+            <div class="container">
+                <h2 class="section-title">Contributors and Collaborators</h2>
+                <div class="contributors">
+                    <div class="contributor-category">
+                        <h3>Principle Investigators</h3>
+                        <div class="contributor-list">
+                            <ul>
+                                <li>Prof. Bernadette Boscoe (Southern Oregon University)</li>
+                                <li>Prof. Tuan Do (UCLA)</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="contributor-category">
+                        <h3>Developers</h3>
+                        <div class="contributor-list">
+                            <ul>
+                                <li>Chandler Campbell (Lead Developer, Southern Oregon University)</li>
+                                <li>Jacob Nowack (Southern Oregon University)</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="contributor-category">
+                        
+                        <h3>Contributors</h3>
+                        <div class="contributor-list">
+                            <ul>
+                                <li>Skyler Acosta (Southern Oregon University)</li>
+                                <li>Zhuo Chen (University of Washington)</li>
+                                <li>Kevin Donlon (Southern Oregon University)</li>
+                                <li>Elyjah Kiehne (Southern Oregon University)</li>
+                                <li>Jonathan Soriano (UCLA)</li>
+                            </ul>
+
+                        </div>
+                    </div>
+                    
+
+                </div>
+            </div>
+        </section>
+
+        <div class="funding-text">Our work is partially supported by:</div>
                 <div class="funding-logos">
                     <div class="funding-item">
                         <img src="sloan.png" alt="Alfred P. Sloan Foundation">
@@ -442,86 +544,11 @@
                         <img src="nsf.png" alt="National Science Foundation">
                         <span class="funding-name">National Science Foundation</span>
                     </div>
-                </div>
-            </div>
-        </section>
+        </div>
+        <div class="funding-text">We are grateful for the support of our funding agencies.</div>
+        <div class="funding-text">Cloud credits for research and development have been generously provided by Gemma Academic Program and CloudBank.</div>
 
-        <section id="about" class="section">
-            <div class="container">
-                <h2 class="section-title">About AquiLLM</h2>
-                <div class="about-content">
-                    <p>AquiLLM addresses the critical problem of knowledge loss in research teams. When students, postdocs, or researchers leave projects, valuable informal practices, troubleshooting techniques, and institutional knowledge often disappear with them. Our platform uses AI to capture and preserve this knowledge, making it accessible through natural language queries.</p>
-                    
-                    <p>The system supports multiple document formats and allows researchers to organize their knowledge into focused collections. Instead of searching through files manually, teams can ask questions like "How did we solve the calibration problem last year?" and receive contextual answers based on their archived knowledge.</p>
-                </div>
-                
-                <div class="features-grid">
-                    <div class="feature-item">
-                        <h3>Multi-Format Support</h3>
-                        <p>Upload PDFs, fetch arXiv papers by ID, import VTT transcripts, scrape webpages, and process handwritten notes with OCR.</p>
-                    </div>
-                    <div class="feature-item">
-                        <h3>Natural Language Queries</h3>
-                        <p>Engage in context-aware conversations with AI about your document contents using natural language.</p>
-                    </div>
-                    <div class="feature-item">
-                        <h3>Organized Collections</h3>
-                        <p>Organize documents into logical collections for focused research projects and streamlined knowledge management.</p>
-                    </div>
-                    <div class="feature-item">
-                        <h3>Multiple AI Providers</h3>
-                        <p>Support for various AI providers including Claude, OpenAI, and Gemini for flexible research assistance.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
 
-        <section id="team" class="section team-section">
-            <div class="container">
-                <h2 class="section-title">Current Contributors</h2>
-                <div class="contributors">
-                    <div class="contributor-category">
-                        <h3>Development</h3>
-                        <div class="contributor-list">
-                            <div class="contributor">
-                                <h4>Chandler Campbell</h4>
-                                <p>Southern Oregon University</p>
-                            </div>
-                            <div class="contributor">
-                                <h4>Jacob Nowack</h4>
-                                <p>Southern Oregon University</p>
-                            </div>
-                            <div class="contributor">
-                                <h4>Skyler Acosta</h4>
-                                <p>Southern Oregon University</p>
-                            </div>
-                            <div class="contributor">
-                                <h4>Elyjah Kiehne</h4>
-                                <p>Southern Oregon University</p>
-                            </div>
-                            <div class="contributor">
-                                <h4>Kevin Donlon</h4>
-                                <p>Southern Oregon University</p>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="contributor-category">
-                        <h3>Research Direction</h3>
-                        <div class="contributor-list">
-                            <div class="contributor">
-                                <h4>Dr. Bernadette Boscoe</h4>
-                                <p>Southern Oregon University</p>
-                            </div>
-                            <div class="contributor">
-                                <h4>Dr. Tuan Do</h4>
-                                <p>University of California, Los Angeles</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
     </main>
 
     <footer>
